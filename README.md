@@ -25,13 +25,15 @@ The application follows a linear processing pipeline:
 5. Playback: The final audio content is returned to the browser for immediate playback.
 
 ## Project Structure
-\`\`\`text
-├── server.py          # Flask application and API endpoints
-├── worker.py          # Core AI logic (Watsonx, STT, and TTS functions)
-├── requirements.txt   # Project dependencies
+├── models/            # Folder containing AI models (e.g., STT/TTS)
 ├── static/            # Frontend assets (JavaScript, CSS)
-└── templates/         # HTML structure
-\`\`\`
+├── templates/         # HTML structure
+├── .gitignore         # Specifies files for Git to ignore
+├── Dockerfile         # Containerization configuration
+├── README.md          # Project documentation
+├── requirements.txt   # Project dependencies
+├── server.py          # Flask application and API endpoints
+└── worker.py          # Core AI logic (Watsonx, STT, and TTS functions)
 
 ## Setup and Installation
 
